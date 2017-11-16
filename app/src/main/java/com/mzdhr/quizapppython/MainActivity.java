@@ -63,11 +63,16 @@ public class MainActivity extends AppCompatActivity {
         if (mRadioButtonAnswer03Question05.isChecked() == true){mCorrectAnswers += 1;}
         if (mEditTextAnswer01Question06.getText().toString().equals(getString(R.string.question06answer01))){mCorrectAnswers += 1;}
 
-        Toast.makeText(this,
-                getString(R.string.result_message_part01)
-                        + mCorrectAnswers
-                        + getString(R.string.result_message_part02)
-                , Toast.LENGTH_SHORT).show();
+        if(mCorrectAnswers == 10){
+            Toast.makeText(this, R.string.result_message_full_score, Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this,
+                    getString(R.string.result_message_part01)
+                            + mCorrectAnswers
+                            + getString(R.string.result_message_part02)
+                    , Toast.LENGTH_SHORT).show();
+        }
+
         mCorrectAnswers = 0;
     }
 

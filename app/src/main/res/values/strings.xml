@@ -27,4 +27,5 @@
     <string name="button_submit">submit</string>
     <string name="result_message_part01">Your result is: </string>
     <string name="result_message_part02">(of 10)</string>
+    <string name="result_message_full_score">Congratulations! You have got all answer correct! 10 of 10</string>
 </resources>
