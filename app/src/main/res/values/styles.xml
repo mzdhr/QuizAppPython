@@ -1,11 +1,48 @@
 <resources>
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!-- Button Color -->
+        <item name="colorButtonNormal">@color/button_color</item>
+    </style>
+
+    <style name="questionLayoutStyle">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:background">@color/background_question</item>
+    </style>
+
+    <style name="questionTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/question_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@color/python_color_two</item>
+    </style>
+
+    <style name="titleLayoutStyle">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:background">@color/background_question</item>
+    </style>
+
+    <style name="titleTextStyle">
+        <item name="android:background">#FFE486</item>
+        <item name="android:textColor">#676666</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="answerTextStyle">
+        <item name="android:layout_margin">4dp</item>
+
     </style>
 
 </resources>

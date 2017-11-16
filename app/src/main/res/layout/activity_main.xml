@@ -1,19 +1,289 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mzdhr.quizapppython.MainActivity">
+    tools:context="com.mzdhr.quizapppython.MainActivity"
+    android:background="@color/background_activity"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/questions_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/titleLayoutStyle"
+            android:background="@color/colorPrimaryDark">
+
+            <ImageView
+                android:id="@+id/ima"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_if_python_logo_282803"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                />
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This Quiz going to challenge you in Python programming language! Choose the correct answers, then hit submit button to get your result."
+                style="@style/titleTextStyle"
+                android:layout_toRightOf="@id/ima"
+                />
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/questionLayoutStyle"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What does Python support:"
+                style="@style/questionTextStyle"
+                />
+
+            <CheckBox
+                android:id="@+id/answer01_question01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Abstraction"
+                style="@style/answerTextStyle"
+                />
+            <CheckBox
+                android:id="@+id/answer02_question01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Polymorphism"
+                style="@style/answerTextStyle"
+                />
+            <CheckBox
+                android:id="@+id/answer03_question01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Encapsulation"
+                style="@style/answerTextStyle"
+                />
+            <CheckBox
+                android:id="@+id/answer04_question01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Inheritance"
+                style="@style/answerTextStyle"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/questionLayoutStyle"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In Python which keyword define a method:"
+                style="@style/questionTextStyle"
+                />
+
+            <CheckBox
+                android:id="@+id/answer01_question02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="def"
+                style="@style/answerTextStyle"
+                />
+            <CheckBox
+                android:id="@+id/answer02_question02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="as"
+                style="@style/answerTextStyle"
+                />
+            <CheckBox
+                android:id="@+id/answer03_question02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="lambda"
+                style="@style/answerTextStyle"
+                />
+            <CheckBox
+                android:id="@+id/answer04_question02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="exec"
+                style="@style/answerTextStyle"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/questionLayoutStyle"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*Args return what data type?"
+                style="@style/questionTextStyle"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:id="@+id/answer01_question03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="dict"
+                    style="@style/answerTextStyle"
+                    />
+                <RadioButton
+                    android:id="@+id/answer02_question03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="tuple"
+                    style="@style/answerTextStyle"
+                    />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/questionLayoutStyle"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="**Kwargs return what data type?"
+                style="@style/questionTextStyle"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:id="@+id/answer01_question04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="dict"
+                    style="@style/answerTextStyle"
+                    />
+                <RadioButton
+                    android:id="@+id/answer02_question04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="tuple"
+                    style="@style/answerTextStyle"
+                    />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/questionLayoutStyle"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Python language uses?"
+                style="@style/questionTextStyle"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:id="@+id/answer01_question05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Compiler"
+                    style="@style/answerTextStyle"
+                    />
+                <RadioButton
+                    android:id="@+id/answer02_question05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Interpreter"
+                    style="@style/answerTextStyle"
+                    />
+                <RadioButton
+                    android:id="@+id/answer03_question05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Both"
+                    style="@style/answerTextStyle"
+                    />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/questionLayoutStyle"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Define a class named Foo"
+                style="@style/questionTextStyle"
+                />
+
+                <EditText
+                    android:id="@+id/answer01_question06"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:hint="class Example:"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+
+    </LinearLayout>
+</ScrollView>

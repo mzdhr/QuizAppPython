@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryDark">#173045</color>
+    <color name="colorPrimary">#1F415F</color>
+    <color name="colorAccent">#FFE465</color>
+
+    <color name="background_activity">#3875AB</color>
+    <color name="background_question">#e3f2fd</color>
+
+    <color name="question_color">#000000</color>
+
+    <color name="python_color_one">#35709F</color>
+    <color name="python_color_two">#FFE465</color>
+
+    <color name="button_color">#FFE465</color>
 </resources>
