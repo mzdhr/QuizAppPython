@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Python Quiz</string>
+    <string name="note">This quiz going to challenge you in Python (Programming Language)!</string>
+    <string name="question01">What does Python support:</string>
+    <string name="question01answer01">Abstraction</string>
+    <string name="question01answer02">Polymorphism</string>
+    <string name="question01answer03">Encapsulation</string>
+    <string name="question01answer04">Inheritance</string>
+    <string name="question02">In Python which keyword define a method:</string>
+    <string name="question02answer01">def</string>
+    <string name="question02answer02">as</string>
+    <string name="question02answer03">lambda</string>
+    <string name="question02answer04">exec</string>
+    <string name="question03">*Args return what data type?</string>
+    <string name="question03answer01">dict</string>
+    <string name="question03answer02">tuple</string>
+    <string name="question04">**Kwargs return what data type?</string>
+    <string name="question04answer01">dict</string>
+    <string name="question04answer02">tuple</string>
+    <string name="question05">Python language uses?</string>
+    <string name="question05answer01">Compiler</string>
+    <string name="question05answer02">Interpreter</string>
+    <string name="question05answer03">Both</string>
+    <string name="question06">Define a class named Foo</string>
+    <string name="question06answer01">class Foo:</string>
+    <string name="question05hint">class Example:</string>
+    <string name="button_submit">submit</string>
+    <string name="result_message_part01">Your result is: </string>
+    <string name="result_message_part02">(of 10)</string>
 </resources>

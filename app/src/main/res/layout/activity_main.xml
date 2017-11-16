@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.mzdhr.quizapppython.MainActivity"
-    android:background="@color/background_activity"
-    >
-
+    android:background="@color/background_activity">
 
     <LinearLayout
         android:id="@+id/questions_layout"
@@ -15,34 +13,35 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             style="@style/titleLayoutStyle"
-            android:background="@color/colorPrimaryDark">
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
 
             <ImageView
-                android:id="@+id/ima"
+                android:id="@+id/img"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:src="@drawable/ic_if_python_logo_282803"
-                android:layout_centerVertical="true"
-                android:padding="8dp"
+                android:padding="4dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_weight="1"
                 />
 
             <TextView
                 android:id="@+id/title_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="This Quiz going to challenge you in Python programming language! Choose the correct answers, then hit submit button to get your result."
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/note"
                 style="@style/titleTextStyle"
-                android:layout_toRightOf="@id/ima"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
                 />
 
-
-
-
-        </RelativeLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -54,7 +53,7 @@
                 android:id="@+id/question01"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="What does Python support:"
+                android:text="@string/question01"
                 style="@style/questionTextStyle"
                 />
 
@@ -62,28 +61,28 @@
                 android:id="@+id/answer01_question01"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Abstraction"
+                android:text="@string/question01answer01"
                 style="@style/answerTextStyle"
                 />
             <CheckBox
                 android:id="@+id/answer02_question01"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Polymorphism"
+                android:text="@string/question01answer02"
                 style="@style/answerTextStyle"
                 />
             <CheckBox
                 android:id="@+id/answer03_question01"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Encapsulation"
+                android:text="@string/question01answer03"
                 style="@style/answerTextStyle"
                 />
             <CheckBox
                 android:id="@+id/answer04_question01"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Inheritance"
+                android:text="@string/question01answer04"
                 style="@style/answerTextStyle"
                 />
 
@@ -99,7 +98,7 @@
                 android:id="@+id/question02"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="In Python which keyword define a method:"
+                android:text="@string/question02"
                 style="@style/questionTextStyle"
                 />
 
@@ -107,28 +106,28 @@
                 android:id="@+id/answer01_question02"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="def"
+                android:text="@string/question02answer01"
                 style="@style/answerTextStyle"
                 />
             <CheckBox
                 android:id="@+id/answer02_question02"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="as"
+                android:text="@string/question02answer02"
                 style="@style/answerTextStyle"
                 />
             <CheckBox
                 android:id="@+id/answer03_question02"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="lambda"
+                android:text="@string/question02answer03"
                 style="@style/answerTextStyle"
                 />
             <CheckBox
                 android:id="@+id/answer04_question02"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="exec"
+                android:text="@string/question02answer04"
                 style="@style/answerTextStyle"
                 />
 
@@ -144,7 +143,7 @@
                 android:id="@+id/question03"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="*Args return what data type?"
+                android:text="@string/question03"
                 style="@style/questionTextStyle"
                 />
 
@@ -155,14 +154,14 @@
                     android:id="@+id/answer01_question03"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="dict"
+                    android:text="@string/question03answer01"
                     style="@style/answerTextStyle"
                     />
                 <RadioButton
                     android:id="@+id/answer02_question03"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="tuple"
+                    android:text="@string/question03answer02"
                     style="@style/answerTextStyle"
                     />
             </RadioGroup>
@@ -180,7 +179,7 @@
                 android:id="@+id/question04"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="**Kwargs return what data type?"
+                android:text="@string/question04"
                 style="@style/questionTextStyle"
                 />
 
@@ -191,14 +190,14 @@
                     android:id="@+id/answer01_question04"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="dict"
+                    android:text="@string/question04answer01"
                     style="@style/answerTextStyle"
                     />
                 <RadioButton
                     android:id="@+id/answer02_question04"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="tuple"
+                    android:text="@string/question04answer02"
                     style="@style/answerTextStyle"
                     />
             </RadioGroup>
@@ -216,7 +215,7 @@
                 android:id="@+id/question05"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Python language uses?"
+                android:text="@string/question05"
                 style="@style/questionTextStyle"
                 />
 
@@ -227,21 +226,21 @@
                     android:id="@+id/answer01_question05"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Compiler"
+                    android:text="@string/question05answer01"
                     style="@style/answerTextStyle"
                     />
                 <RadioButton
                     android:id="@+id/answer02_question05"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Interpreter"
+                    android:text="@string/question05answer02"
                     style="@style/answerTextStyle"
                     />
                 <RadioButton
                     android:id="@+id/answer03_question05"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Both"
+                    android:text="@string/question05answer03"
                     style="@style/answerTextStyle"
                     />
             </RadioGroup>
@@ -259,7 +258,7 @@
                 android:id="@+id/question06"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Define a class named Foo"
+                android:text="@string/question06"
                 style="@style/questionTextStyle"
                 />
 
@@ -268,7 +267,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text=""
-                    android:hint="class Example:"
+                    android:hint="@string/question05hint"
                     android:maxLines="1"
                     android:inputType="text"
                     />
@@ -276,9 +275,10 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/button_submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="submit"
+            android:text="@string/button_submit"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="32dp"
             android:layout_marginLeft="16dp"
